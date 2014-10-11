@@ -11,16 +11,16 @@
 
 		// Set and check input/textarea values
 		$clonedObject.find('input, textarea').each(function() {
-			if(jQuery(this).is(find('input[type="checkbox"], input[type="radio"]'))) {
-				jQuery(this).prop('checked', jQuery(this).prop('checked'));
+			if($(this).is(find('input[type="checkbox"], input[type="radio"]'))) {
+				$(this).prop('checked', $(this).prop('checked'));
 			} else {
-				jQuery(this).attr('value', jQuery(this).val());
+				$(this).attr('value', $(this).val());
 			}
 		});
 
 		// Select selected options
 		$clonedObject.find('select option').each(function() {
-			jQuery(this).prop('selected', jQuery(this).prop('selected'));
+			$(this).prop('selected', $(this).prop('selected'));
 		});
 
 		return $clonedObject;
