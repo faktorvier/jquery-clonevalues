@@ -14,7 +14,7 @@ This plugin adds a optimized clone method to your jQuery library. It works exact
 The arguments are the same as the jQuery <a href="https://api.jquery.com/clone/" target="_blank">.clone()</a> method but the method is called `cloneValues()`:
 
 ```javascript
-$('.video').cloneValues( [withDataAndEvents ] [, deepWithDataAndEvents ] );
+$('form').cloneValues( [withDataAndEvents ] [, deepWithDataAndEvents ] );
 ```
 
 ## Changelog
